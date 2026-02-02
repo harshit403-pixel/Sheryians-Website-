@@ -35,7 +35,7 @@ main{
 
 nav{
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     height: 110px;
     backdrop-filter: blur(10px);
     font-family: manrope;
@@ -81,23 +81,41 @@ nav{
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
-          mask-composite: exclude;
-            pointer-events: none; 
+     mask-composite: exclude;
+    pointer-events: none; 
 }
 .home{
+    cursor: pointer;
     height: 20px;
-    text-overflow: clip;
+    width: 3vw;
     overflow: hidden;
 }
 .home span{
-    cursor: pointer;
-    color: white;
-}
-.middlenav h2{
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.699);
+    display: inline-block;
     font-weight:400;
     font-size: 15px;
+    color: white;
+    transition: all ease .3s;
+}
+.home span:hover{
+    transform: translateY(-50%);
+}
+.middlenav .navlight span{
+        color: rgba(255, 255, 255, 0.699);
+    font-weight:400;
+    font-size: 15px
+}
+#course{
+    width: 3.9vw;
+}
+#boot{
+    width: 4.6vw;
+}
+#class{
+    width: 4.9vw;
+}
+#call{
+    width: 7.9vw;
 }
 .signin{
     display: flex;
@@ -110,21 +128,13 @@ nav{
 
 }
 .section1{
-    background-color: #000;
+    background-image: url(https://dfdx9u0psdezh.cloudfront.net/common/Background.svg);
     position: relative;
-    z-index: 0;
-    width: 100%;
-    min-height: 100%;
+    /* background-size:cover; */
+    background-size: 110%;
+    background-position: top;
+    background-repeat: no-repeat;
 }
-#gradbg{
-    opacity: .6;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 160%;
-
-}
-
 
 .herotext{
     position:relative;
@@ -148,7 +158,7 @@ nav{
 }
 .herotext h1{
     text-align: center;
-    font-size: 64px;
+    font-size: 62px;
     font-family: machinareg;
     font-weight:100;
     letter-spacing: -3;
@@ -162,6 +172,56 @@ nav{
     font-family: manrope;
     font-weight:100;
     color: rgb(255, 255, 255);
+}
+.section1 h1 span{
+    display: inline-block;
+    position: relative;
+    font-size: 58px;
+    height: 4.3vw;
+    background:linear-gradient(to right, #993b1844, #ff581b39, #782e1339) ;
+    padding: 3px 5px;
+    border: 1px solid #de5b2b;
+    letter-spacing: 0.5;
+
+
+}
+#dot1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 4px;
+    width: 4px;
+}
+
+#dot2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50% , -50%);
+    background-color: white;
+    height: 4px;
+    width: 4px;
+}
+#dot3{
+    position: absolute;
+
+    bottom:0;
+    left: 0;
+    transform: translate(-50% , 50%);
+    background-color: white;
+    height: 4px;
+    width: 4px;
+}
+#dot4{
+    position: absolute;
+    bottom: 0;
+    right:  0;
+    transform: translate(50%, 50%);
+    background-color: white;
+    height: 4px;
+    width: 4px;
 }
 .students{
 width: 100%;
@@ -198,60 +258,32 @@ font-size: 15px;
 }
 
 #cta{
-    margin-top: 50px;
+    margin-top: 40px;
     box-shadow:0.5px -0.6px 0px white, -0.8px 0px 0px white;
     color: white;
-    font-family: manrope;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 14px 30px;
+    padding: 16px 24px;
     border: none;
     border-radius: 10px;
     background: linear-gradient(to right,#de5b2b, #ad451f);
 }
-.section1 h1 span{
-    position: relative;
-    font-size: 55px;
-    background:linear-gradient(to right, #993b1844, #ff581b39, #782e1339) ;
-    padding: 0px 10px;
-    border: 1px solid #de5b2b;
-    letter-spacing: 0.5;
-
-
-}
-#dot1{
-    position: absolute;
-    top: -2;
-    left: -2;
-    background-color: white;
-    height: 4px;
-    width: 4px;
+#cta1{
+    height: 20px ;
+    overflow: hidden;
+    width: 9vw;
 }
 
-#dot2{
-    position: absolute;
-    top: -2;
-    right: -2;
-    background-color: white;
-    height: 4px;
-    width: 4px;
+#cta1 #hover{
+    cursor: pointer;
+    font-family: manrope;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    height: 20px;
+    transition: all ease .3s;
 }
-#dot3{
-    position: absolute;
-
-    bottom: -2;
-    left: -2;
-    background-color: white;
-    height: 4px;
-    width: 4px;
-}
-#dot4{
-    position: absolute;
-    bottom: -2;
-    right:  -2;
-    background-color: white;
-    height: 4px;
-    width: 4px;
+#cta1 #hover:hover{
+    transform: translateY(-110%);
+    
 }
 .section2{
     display: flex;
@@ -299,21 +331,27 @@ border-radius: 8px;
 }
 
 .element2 img{
-    height: 200px;
+    height: 220px;
 }
 .element1 img{
-    height: 200px;
+    height: 220px;
 }
 .element1{
 
     position: absolute;
         top: 20%;
     right:-6.6%;
+    animation: move 3s ease-in-out infinite;
+    
 }
 .element2{
     position: absolute;
     top: 60%;
     left:-4.6%;
+   animation-name: move;
+   animation-timing-function: ease-in-out;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
 }
 
 .element1 h2{
@@ -325,8 +363,8 @@ border-radius: 8px;
     position: absolute;
     width: 100px;
     text-align: center;
-    top: 25%;
-    left: 25%;
+    top: 27%;
+    left: 26%;
 
 }
 .element2 h2{
@@ -338,23 +376,48 @@ border-radius: 8px;
     position: absolute;
     width: 100px;
     text-align: center;
-    top: 23%;
+    top: 25%;
     line-height: 1;
-    left: 22%;
+    left: 24%;
+
 }
 
+@keyframes move {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform:translate(0%);
+    }
+    
+}
 
 .section3{
     min-height: 100%;
     width: 100%;
    padding-bottom: 500px;
 }
-
+.companylogos{
+    display: flex;
+    gap: 140px;
+}
 .companylogos img{
     margin-top: 170px;
     width: 100%;
+    animation: horizontal 50s linear  infinite ;
 }
 
+@keyframes horizontal {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-400%);
+    }
+}
 
 .compcards{ 
     margin-top: 300px;
