@@ -91,26 +91,7 @@ nav{
 }
 .home span{
     cursor: pointer;
-    position: relative;
     color: white;
-    top: 0px;
-    transition: .2s all ease;
-}
-.home span:hover{
-    top: -18px;
-}
-
-.home span::after{
-    color: #40ff00;
-    content: "Home";
-    position: absolute;
-    top: 20px;
-    left: 0px;
-    transition: .2s all ease;
-}
-
-.some span:hover::after{
-    top: 2px;
 }
 .middlenav h2{
     cursor: pointer;
