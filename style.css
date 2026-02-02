@@ -1,0 +1,541 @@
+@font-face {
+    font-family: machinalight;
+    src: url(./NeueMachina-Light.woff2);
+}
+@font-face {
+    font-family: machinareg;
+    src: url(./NeueMachina-Regular.woff2);
+}
+
+@font-face {
+    font-family: machinabold;
+    src: url(./NeueMachina-Ultrabold.woff2);
+}
+@font-face {
+    font-family: manrope;
+    src: url(./Manrope-VariableFont_wght.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+html, body{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+main{
+    background-color: rgb(0, 0, 0);
+    min-height: 100%;
+    width: 100%;
+}
+
+nav{
+    position: absolute;
+    z-index: 1;
+    height: 110px;
+    backdrop-filter: blur(10px);
+    font-family: manrope;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+    padding: 40px 68px;
+}
+.logo{
+    width: 7%;
+}
+.logo img{
+
+    height: 33.8px;
+}
+.middlenav{
+    position: relative;
+    /* box-shadow:0px 0.2px 0px 0px rgb(255, 255, 255), 0.3px 0px 0px 0px white ;  */
+    padding: 13px 20px;
+    border-radius: 8px;
+    background: linear-gradient(to right , rgb(20, 15, 15), rgb(20, 16, 16), rgb(18, 13, 13));
+    display: flex;
+    gap: 33px;
+}
+.middlenav::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 0px .5px .5px 0px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.355),
+    rgba(255,255,255,0),
+    rgba(255, 255, 255, 0.275)
+  );
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+            pointer-events: none; 
+}
+.home{
+    height: 20px;
+    text-overflow: clip;
+    overflow: hidden;
+}
+.home span{
+    cursor: pointer;
+    position: relative;
+    color: white;
+    top: 0px;
+    transition: .2s all ease;
+}
+.home span:hover{
+    top: -18px;
+}
+
+.home span::after{
+    color: #40ff00;
+    content: "Home";
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    transition: .2s all ease;
+}
+
+.some span:hover::after{
+    top: 2px;
+}
+.middlenav h2{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.699);
+    font-weight:400;
+    font-size: 15px;
+}
+.signin{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.signin img{
+    border-radius: 50%;
+    height: 39px;
+
+}
+.section1{
+    background-color: #000;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    min-height: 100%;
+}
+#gradbg{
+    opacity: .6;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 160%;
+
+}
+
+
+.herotext{
+    position:relative;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.herotext h2{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(232, 96, 46);
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-family: manrope;
+}
+.herotext h1{
+    text-align: center;
+    font-size: 64px;
+    font-family: machinareg;
+    font-weight:100;
+    letter-spacing: -3;
+    color: white;
+    line-height: 1.1;
+}
+.herotext h3{
+    width: 60%;
+    text-align: center;
+    font-size: 25;
+    font-family: manrope;
+    font-weight:100;
+    color: rgb(255, 255, 255);
+}
+.students{
+width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.students p span{
+    margin-right:3px ;
+    color: rgb(232, 96, 46);
+    font-weight: 600;
+}
+.students p{
+
+    margin-top:30px;
+font-size: 15px;
+    font-family:manrope;
+    color: rgba(255, 255, 255, 0.664);
+}
+.studentimg{
+    display: flex;
+    gap: 24px;
+}
+.studentimg img{
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    height: 33px;
+    width: 33px;
+}
+
+#cta{
+    margin-top: 50px;
+    box-shadow:0.5px -0.6px 0px white, -0.8px 0px 0px white;
+    color: white;
+    font-family: manrope;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#de5b2b, #ad451f);
+}
+.section1 h1 span{
+    position: relative;
+    font-size: 55px;
+    background:linear-gradient(to right, #993b1844, #ff581b39, #782e1339) ;
+    padding: 0px 10px;
+    border: 1px solid #de5b2b;
+    letter-spacing: 0.5;
+
+
+}
+#dot1{
+    position: absolute;
+    top: -2;
+    left: -2;
+    background-color: white;
+    height: 4px;
+    width: 4px;
+}
+
+#dot2{
+    position: absolute;
+    top: -2;
+    right: -2;
+    background-color: white;
+    height: 4px;
+    width: 4px;
+}
+#dot3{
+    position: absolute;
+
+    bottom: -2;
+    left: -2;
+    background-color: white;
+    height: 4px;
+    width: 4px;
+}
+#dot4{
+    position: absolute;
+    bottom: -2;
+    right:  -2;
+    background-color: white;
+    height: 4px;
+    width: 4px;
+}
+.section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.videobox{
+    position: relative;
+    border-radius: 12px;
+    align-self: center;
+height: 92%;
+width:70%;
+box-shadow: 0px 0px 0px .18px white;
+    background-color:#f6b29907;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videobox video{
+height: 88%;
+border-radius: 8px;
+}
+.dotcolor{
+    display: flex;
+    position: absolute;
+    top:3%;
+    left: 3%;
+    gap: 5px;
+}
+#keydot1 , #keydot2 , #keydot3{
+    background-color: white;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+}
+#keydot1{
+    background-color: rgb(255, 80, 80);
+}
+#keydot2{
+    background-color: rgb(252, 255, 92);
+}
+#keydot3{
+    background-color: #94ff70;
+}
+
+.element2 img{
+    height: 200px;
+}
+.element1 img{
+    height: 200px;
+}
+.element1{
+
+    position: absolute;
+        top: 20%;
+    right:-6.6%;
+}
+.element2{
+    position: absolute;
+    top: 60%;
+    left:-4.6%;
+}
+
+.element1 h2{
+    color: white;
+    font-size: 22px;
+    letter-spacing: -1;
+    font-family: manrope;
+    font-weight: normal;
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    top: 25%;
+    left: 25%;
+
+}
+.element2 h2{
+    color: white;
+    font-size: 22px;
+    letter-spacing: -1;
+    font-family: manrope;
+    font-weight: normal;
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    top: 23%;
+    line-height: 1;
+    left: 22%;
+}
+
+
+.section3{
+    min-height: 100%;
+    width: 100%;
+   padding-bottom: 500px;
+}
+
+.companylogos img{
+    margin-top: 170px;
+    width: 100%;
+}
+
+
+.compcards{ 
+    margin-top: 300px;
+       display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0px 100px;
+    width: 100%;
+}
+
+.instructor{
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 0px .2px white;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 140px;
+    height:360px ;
+    width: 370px;
+}
+.instructor1{
+    font-family: machinareg;
+    display: flex;
+    justify-content: space-between;
+}
+.instructor1 h1{
+    margin-top: 30px;
+    font-size: 80;
+    font-weight: normal;
+    line-height: .8;
+}
+.instructor1 h1 p{
+
+    font-size: 35px;
+}
+.instructor h2{
+    font-family: manrope;
+    font-weight:100;
+    color: rgba(255, 255, 255, 0.604);
+}
+
+.instructor1 img{
+    height: 68px;
+
+}
+
+
+#chilly{
+    height: 200px;
+    top: 20%;
+    left: 10%;
+    filter: blur(40px);
+    rotate: -40deg; 
+    position: absolute;
+}
+.community{
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 130px;
+    padding-top: 60px;
+    height:360px ;
+    width: 370px;
+    background-color: white;
+}
+.community button{
+
+    justify-content: space-between;
+    background-color: #000;
+    color: white;
+    position: relative;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    font-family: machinareg;
+    padding: 15px 10px;
+    width: 80%;
+}
+
+.community button svg{
+
+    border-radius: 50%;
+    height: 60px;
+    padding: 12px;
+    width: 60px;
+    box-shadow: inset 1px 1px 20px rgba(255, 255, 255, 0.547) , 0px 0px 0px .4px white;
+}
+.community button h1{
+    margin-left: 30px;
+    font-size: 29px;
+    font-weight: 100;
+    line-height: 1.1;
+    text-align: left;
+
+}
+
+.community button h1 span{
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+
+.community p{
+    position: relative;
+    z-index: 11;
+    line-height: 1;
+    padding: 0px 40px;
+    font-family: manrope;
+    font-size: 25px;
+    font-weight: 300;
+}
+.community p span{
+    color: rgba(0, 0, 0, 0.474);
+}
+
+ .subscribers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 120px;
+    padding: 0px 23px;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    height:360px ;
+    width: 360px;
+    box-shadow: 0px 0px 0px .2px white;
+    background-color: #000000;
+}
+.subscribers img{
+    height: 74px;
+}
+#subs{
+    height: 340px;
+    position: absolute;
+}
+.subscribers h2{
+
+    width: 70%;
+    line-height: 1.1;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.474);
+    font-family: manrope;
+}
+.subs1{
+    position: relative;
+    font-family: machinareg;
+    display: flex;
+    justify-content: space-between;
+}
+.subs1 h1{
+    margin-top: 30px;
+    font-size: 75px;
+    font-weight: normal;
+    line-height: 1;
+}
+.subs1 h1 p{
+
+    font-size: 32px;
+}
