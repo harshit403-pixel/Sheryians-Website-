@@ -627,7 +627,9 @@ border-radius: 8px;
     color: #de5b2b;
 }
 .kings{
+    height: 100%;
     width: 100%;
+    overflow: hidden;
     padding: 40px 50px;
     display: flex;
     gap: 25px;
@@ -759,8 +761,9 @@ border-radius: 8px;
 
 
 .section5{
+    position: relative;
     padding-top: 9vw;
-    min-height: 100%;
+    padding-bottom: 9vw;
     width: 100%;
     background-color:rgb(255, 244, 240);
     border-radius: 20px;
@@ -828,4 +831,156 @@ border-radius: 8px;
 #cta2 #hover:hover{
     transform: translateY(-110%);
     
+}
+.coursecard3{
+    top: 0;
+    position: sticky;
+    width: 100%;
+    padding: 0px 70px 0px 70px;
+}
+#coursecard33{
+    background-color: black;
+    color: white;
+}
+#coursecard33 h1{
+    color: white;
+}
+#coursecard33 h1 p{
+    color: rgba(255, 255, 255, 0.434);
+}
+.coursecard2{
+    top: 0;
+    position: sticky;
+    width: 100%;
+    padding: 170px 70px 0px 70px;
+}
+.coursecard1{
+    margin-top: 5vw;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 90px 70px 0px 70px;
+}
+.inner-coursecard{
+    height: 33vw;
+    padding: 50px;
+    display: flex;
+    gap: 5vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px .1px black;
+}
+.inner-coursecard img{
+    border-radius: 10px;
+    height:25vw;
+}
+.coursedetail{
+    display: flex;
+    gap: 1vw;
+    flex-direction: column;
+}
+.coursedetail h1{
+    text-align: left;
+    font-family: machinareg;
+    font-weight: 900;
+    margin: 0px;
+    width: 90%;
+}
+.coursedetail h1 p{
+    font-size: 20px;
+    font-family: manrope;
+    width: 80%;
+    color: rgba(0, 0, 0, 0.514);
+    font-weight: 100;
+}
+
+.inner-detail{
+    display: flex;
+    gap: 2vw;
+
+}
+.inner-detail1 {
+    display: flex;
+    gap: .5vw;
+    align-items: center;
+}
+.inner-detail1 span{
+    font-family: manrope;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 1vw;
+}
+.inner-detail1 p{
+    font-size: .8vw;
+    font-weight: 500;
+}
+.inner-detail1 svg{
+    color: #de5b2b;
+    border-radius: 9px;
+    padding: 9px;
+    background-color: rgb(252, 238, 232);
+}
+.coursedetail h2{
+    margin-top: 2.5vw;
+    font-family: manrope;
+    font-weight: 500;
+    font-size: 2.3vw;
+}
+#pricecut{
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-decoration: line-through;
+}
+#gst{
+        font-weight: 300;
+    font-size: 1.2vw;
+}
+
+#cta3{
+    color: white;
+    padding: 16px 24px;
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    background: black;
+}
+#coursecard22{
+    background-color: #de5b2b;
+    color: white;
+}
+#coursecard22 h1{
+    color: white;
+    line-height: 1.1;
+}
+#blackaccent{
+    color: rgb(0, 0, 0);
+}
+
+
+#cta4{
+    color: rgb(0, 0, 0);
+    padding: 16px 24px;
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+}
+
+
+.section6{
+    padding-top: 9vw;
+    height: 100%;
+    width: 100%;
+    color: rgb(0, 0, 0);
+
+}
+.section6 h1{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 3vw;
+    font-family: manrope;
+    font-weight: 500;
+    color: white;
 }
