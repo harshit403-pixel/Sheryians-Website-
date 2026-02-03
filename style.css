@@ -398,9 +398,10 @@ border-radius: 8px;
 .section3{
     min-height: 100%;
     width: 100%;
-   padding-bottom: 500px;
 }
 .companylogos{
+    width: 100%;
+    overflow: hidden;
     display: flex;
     gap: 140px;
 }
@@ -582,4 +583,247 @@ border-radius: 8px;
 .subs1 h1 p{
 
     font-size: 32px;
+}
+
+.section4{
+    min-height:100%;
+    width: 100%;
+    margin-top: 12vw;
+    padding-bottom: 13vw;
+}
+#boxtext{
+    margin-bottom: 1vw;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    z-index: 1;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.596);
+    position: relative;
+    font-size: 19px;
+    height: 1.7vw;
+    background:linear-gradient(to right, #993b1844, #ff581b20, #782e1339) ;
+    padding: 2px 15px;
+    border: 1px solid #de5b2b3e;
+    letter-spacing: 0.5;
+    font-family: machinalight;
+    font-weight: 100;
+}
+
+.section4 h1{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 3vw;
+    font-family: manrope;
+    font-weight: 500;
+    color: white;
+}
+
+.textaccent{
+    color: #de5b2b;
+}
+.kings{
+    width: 100%;
+    padding: 40px 50px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: nowrap;
+}
+.king1{
+    flex-shrink:0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 32vw;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 260px;
+    transition: all ease .3s;
+}
+#king2{
+    top: 5vw;
+}
+.king1:hover img{
+    filter: grayscale(1);
+}
+.king1 img{
+   position: absolute;
+   object-fit:cover;
+   height: 100%;
+   width: 100%;
+       transition: all ease .3s;
+}
+.king11{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 15px ;
+}
+
+#sparklebtn{
+    height: fit-content;
+    border-radius: 100px;
+    font-family: manrope;
+    font-weight: 500;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    gap: 4px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+   background: linear-gradient(to left,rgb(245, 78, 0),rgb(250, 92, 0), rgb(255, 102, 0));
+              transition: all ease .3s;
+}
+.king1:hover #sparklebtn{
+    opacity: 1;
+}
+#roundblack{
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+    padding: 13px;
+           transition: all ease .3s;
+    
+}
+.king1:hover #roundblack{
+    rotate: 44.5deg;
+}
+
+#comeup{
+    position: relative;
+    z-index: 2;
+    font-family: machinabold;
+    width: 100%;
+    padding: 0px 40px 0px 20px; 
+    font-size: 25px;
+    text-align: left;
+    text-transform: capitalize;
+    transform: translateY(135%);
+    transition: all ease .3s;
+}
+.king1:hover #comeup{
+    transform: translateY(0%);
+}
+#comeup p{
+    font-size: 13.5px;
+    font-family: manrope;
+    font-weight: normal;
+}
+.orangegrad
+{
+    border-radius: 10px;
+    background:linear-gradient(to top,#de5b2b ,#de5b2b00,#de5b2b00) ;
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1;
+    transition: all ease .3s;
+}
+
+.king1:hover .orangegrad{
+    height: 100%;
+}
+
+#comeup2{
+    position: relative;
+    z-index: 2;
+    font-family: machinabold;
+    width: 100%;
+    padding: 0px 40px 0px 20px; 
+    font-size: 24px;
+    text-align: left;
+    text-transform: capitalize;
+    transform: translateY(142%);
+    transition: all ease .3s;
+}
+.king1:hover #comeup2{
+    transform: translateY(0%);
+}
+#comeup2 p{
+    font-size: 13px;
+    font-family: manrope;
+    font-weight: normal;
+}
+
+
+.section5{
+    padding-top: 9vw;
+    min-height: 100%;
+    width: 100%;
+    background-color:rgb(255, 244, 240);
+    border-radius: 20px;
+
+}
+#boxtext2{
+    margin-bottom: 1vw;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    position: relative;
+    font-size: 19px;
+    height: 1.7vw;
+    background:linear-gradient(to right, #993a1841, #ff581b71, #782e1339) ;
+    padding: 2px 15px;
+    border: 1px solid #de5b2b;
+    letter-spacing: 0.5;
+    font-family: machinalight;
+    font-weight: 100;
+}
+#boxtext2 #dot1{
+    background-color: #000;
+}
+#boxtext2 #dot2{
+    background-color: #000;
+}
+#boxtext2 #dot3{
+    background-color: #000;
+}
+#boxtext2 #dot4{
+    background-color: #000;
+}
+
+.section5 h1{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    font-size: 3vw;
+    font-family: manrope;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+#cta2{
+    height: 20px ;
+    overflow: hidden;
+    width: 10vw;
+}
+
+#cta2 #hover{
+    cursor: pointer;
+    font-family: manrope;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    height: 20px;
+    transition: all ease .3s;
+}
+#cta2 #hover:hover{
+    transform: translateY(-110%);
+    
 }
