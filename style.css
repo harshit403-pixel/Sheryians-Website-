@@ -403,12 +403,14 @@ border-radius: 8px;
     width: 100%;
     overflow: hidden;
     display: flex;
-    gap: 140px;
 }
 .companylogos img{
     margin-top: 170px;
+    padding: 0px 25px;
     width: 100%;
-    animation: horizontal 50s linear  infinite ;
+        /* transform: translateX(-100%); */
+
+    animation: horizontal 5s linear  infinite ;
 }
 
 @keyframes horizontal {
@@ -416,7 +418,7 @@ border-radius: 8px;
         transform: translateX(0%);
     }
     100%{
-        transform: translateX(-400%);
+        transform: translateX(-100%);
     }
 }
 
