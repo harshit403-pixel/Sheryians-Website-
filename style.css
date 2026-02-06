@@ -411,7 +411,7 @@ border-radius: 8px;
     width: 100%;
         /* transform: translateX(-100%); */
 
-    animation: horizontal 5s linear  infinite ;
+    animation: horizontal 15s linear  infinite ;
 }
 
 @keyframes horizontal {
@@ -1186,7 +1186,7 @@ width: 100%;
 .ytcards:hover .yt-card{
         animation-play-state: paused;
             transform: scale(.9);
-    filter: blur(5px);
+    filter: blur(8px);
 
 }
 .ytcards:hover .yt-card:hover{
@@ -1374,4 +1374,269 @@ width: 100%;
 }
 .placetop-center:hover .orangegrad{
     height: 160%;
+}
+
+.section9{
+    padding-top: 9vw;
+    padding-bottom: 9vw;
+    width: 100%;
+    background-color: #000;
+}
+.section9 h1{
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    font-size: 3vw;
+    font-family: manrope;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 9vw;
+}
+
+.compare{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+
+}
+
+.shery{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+     display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.sherylogo img{
+    height: 3vw;
+}
+.shery-values{
+    position: relative;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    gap: 1.7vw;
+    border-radius: 20px;
+    height: 80%;
+    padding: 2vw 6.2vw 2vw 2vw;
+    background:linear-gradient( to top, #120000,#050000 );
+    z-index: 2;
+}
+.shery-value1{
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: .5vw;
+    color: white;
+    font-family: manrope;
+}
+.shery-values-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.shery-value1 p{
+    font-size: 1.3rem;
+}
+.shery-value1 svg{
+    color: rgb(18, 219, 0);
+}
+.valuegrad{
+    margin-left: 3vw;
+    height: .8px;
+    width: 100%;
+    background:linear-gradient(to right , black , black, rgba(255, 255, 255, 0.184),rgba(255, 255, 255, 0.54),rgba(255, 255, 255, 0.233), black);
+}
+.otherlogo{
+    color: white;
+    display: flex;
+    font-family: manrope;
+    gap: .5vw;
+    align-items: center;
+}
+.otherlogo span{
+    font-size: 2rem;
+}
+.other{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    height: 100%;
+    gap: 2.01vw;
+}
+.other-values{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vw;
+    height: 80%;
+    border-radius: 20px;
+    height: 80%;
+    padding: 2vw 10vw 2vw 2vw;
+    background:linear-gradient( to top, #120000,#050000 );
+    position: relative;
+    z-index: 12;
+}
+.shery-values::before{
+     content: "";
+    z-index: -1;
+    inset: 0;
+    background:linear-gradient( to top, #120000,#050000 );
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+.other-values::before{
+    content: "";
+    z-index: -1;
+    inset: 0;
+    background:linear-gradient( to top, #120000,#050000 );
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+.copyborder{
+        background: linear-gradient(to top , black, rgba(255, 255, 255, 0.537) , rgba(255, 255, 255, 0.29));
+        z-index: -3;
+    height: 100.1%;
+    width: 100.1%;
+    position: absolute;
+    bottom: .13;
+    transform: translateX(-5.27%);
+    border-radius: 20px;
+
+}
+.copyborder2{
+        background: linear-gradient(to top , black, rgba(255, 255, 255, 0.537) , rgba(255, 255, 255, 0.29));
+        z-index: -3;
+    height: 100.1%;
+    width: 100.1%;
+    position: absolute;
+    bottom: .13;
+    transform: translateX(-5.27%);
+    border-radius: 20px;
+
+}
+.section10{
+    height: 100%;
+}
+.section10 h1{
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    font-size: 3vw;
+    font-family: manrope;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 4vw;
+}
+.faq-cards{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    gap: 1vw;
+    justify-content: center;
+    transition: all ease .5s;
+}
+.faqbtninner{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+.faq-cards button{
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 0px .2px rgba(255, 255, 255, 0.71);
+    font-size: 19px;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.503);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #080000, black);
+    justify-content:flex-start;
+    padding: 1.4vw 1vw ;
+    font-family: manrope;
+    width: 55%;
+
+}
+.faq-cards button p{
+    transition: all ease .5s;
+}
+#btnsvg{
+    transition: all ease .4s;
+}
+.lightcoloring{
+    color: white;
+}
+.rotatesvg{
+    rotate: 180deg;
+}
+
+.faqanswer {
+    width: 95%;
+        margin-top: 0vw;
+    text-align: left;
+    font-size: 14px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.5s ease, opacity 0.3s ease;
+  transition: all ease .3s;
+}
+
+.faqanswer.open {
+  opacity: 1;
+      margin-top: 1vw;
+}
+
+
+.section11{
+
+    height: 100%;
+    width: 100%;
+   background-image: url(https://dfdx9u0psdezh.cloudfront.net/footer/1261157240.webp);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.section11 h1{
+    margin: auto;
+    padding-top: 9vw;
+    font-family: machinareg;
+    font-weight: normal;
+    text-align: center;
+    font-size: 4vw;
+    text-transform: capitalize;
+    width: 70%;
+    color: white;
+}
+#boxtextlast{
+        margin-bottom: 1vw;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    z-index: 1;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.866);
+    position: relative;
+    font-size: 70px;
+    height: 6vw;
+    background:linear-gradient(to right, #993b1844, #ff581b20, #782e1339) ;
+    padding: 2px 15px;
+    border: 1px solid #de5b2b3e;
+    letter-spacing: 0.5;
+    font-family: machinalight;
+    font-weight: 100;
 }
