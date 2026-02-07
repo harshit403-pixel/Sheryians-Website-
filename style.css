@@ -15,6 +15,12 @@
     font-family: manrope;
     src: url(./Manrope-VariableFont_wght.woff2);
 }
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -34,9 +40,12 @@ main{
     width: 100%;
 }
 
+.navhidden{
+    transform: translateY(-100%);
+}
 nav{
-    position: absolute;
-    z-index: 10;
+    position: fixed;
+    z-index: 1000;
     height: 110px;
     backdrop-filter: blur(10px);
     font-family: manrope;
@@ -47,6 +56,7 @@ nav{
     width: 100%;
     color: white;
     padding: 40px 68px;
+    transition: all ease .4s;
 }
 .logo{
     width: 7%;
@@ -590,7 +600,8 @@ border-radius: 8px;
 
 .section4{
     min-height:100%;
-    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
     margin-top: 12vw;
     padding-bottom: 13vw;
 }
@@ -627,10 +638,19 @@ border-radius: 8px;
 .textaccent{
     color: #de5b2b;
 }
+.kings.kingscoming{
+
+        transform: translateX(-12%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .kings {
+    transition: none;
+  }
+}
 .kings{
+     transition: transform 3s cubic-bezier(0.22, 1, 0.36, 1);
+    transform: translateX(25%);
     height: 100%;
-    width: 100%;
-    overflow: hidden;
     padding: 40px 50px;
     display: flex;
     gap: 25px;
@@ -1639,4 +1659,74 @@ width: 100%;
     letter-spacing: 0.5;
     font-family: machinalight;
     font-weight: 100;
+}
+
+
+.section12{
+    height: 100%;
+    width: 100%;
+    padding-top: 4vw;
+}
+.footimage{
+    position: relative;
+    width: 100%;
+    height: 38%;
+    display: flex;
+    justify-content: center;
+}
+.footimage img{
+    width: 96%;
+    position: relative;
+    z-index: 2;
+}
+.foot-details{
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sheryians-footlogo img{
+    height: 9vw;
+}
+.foot-social-logos {
+    display: flex;
+    gap: 1.6vw;
+    margin-left: 2vw;
+}
+.foot-social-logos img{
+    height: 1.3vw;
+    filter: invert();
+
+}
+
+.foot-left{
+    padding: 0vw 1vw;
+}
+.foot-right{
+    padding: 4vw;
+    display: flex;
+    gap: 4vw;
+}
+
+.foot-about{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+}
+p#foot-head{
+    color: white;
+    font-size: 1rem;
+}
+p#foot-head2{
+    margin-bottom: .3vw;
+    color: white;
+}
+.foot-about p{
+    text-align: left;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.519);
+    font-family: manrope;
+
 }
