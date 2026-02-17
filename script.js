@@ -1,3 +1,13 @@
+const lenis = new Lenis();
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
 const btn = document.querySelector("#faqbtn")
 const svgbtn = btn.querySelector("#btnsvg")
 const para = btn.querySelector("p")
@@ -31,7 +41,7 @@ visible.addEventListener("transitionend", () => {
   }
 })
 
-let kings = document.querySelector("#ola")
+
 let naving = document.querySelector("nav")
 
 let lastScrollY = window.scrollY;
@@ -41,11 +51,10 @@ window.addEventListener("scroll", () => {
 
   if (currentScrollY > lastScrollY && currentScrollY > 100) {
     // scrolling DOWN
-     kings.classList.add("kingscoming");
     naving.classList.add("navhidden");
   } else {
     // scrolling UP
-     kings.classList.remove("kingscoming");
+
     naving.classList.remove("navhidden");
   }
 

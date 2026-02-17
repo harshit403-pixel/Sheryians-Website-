@@ -638,25 +638,17 @@ border-radius: 8px;
 .textaccent{
     color: #de5b2b;
 }
-.kings.kingscoming{
-
-        transform: translateX(-12%);
-}
-@media (prefers-reduced-motion: reduce) {
-  .kings {
-    transition: none;
-  }
-}
 .kings{
-     transition: transform 3s cubic-bezier(0.22, 1, 0.36, 1);
-    transform: translateX(25%);
     height: 100%;
     padding: 40px 50px;
     display: flex;
     gap: 25px;
     flex-wrap: nowrap;
 }
+
+
 .king1{
+
     flex-shrink:0;
     cursor: pointer;
     position: relative;
